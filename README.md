@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Minsky Monitor — App de Windows
 
 App de escritorio para Windows basada en Electron.
@@ -120,3 +121,6 @@ Podés generarlos gratis en: https://icoconvert.com
 - **Auto-updater**: solo funciona con builds firmados o con `verifyUpdateCodeSignature: false` (ya configurado).
 - **GitHub Token**: el workflow usa `GITHUB_TOKEN` automático, no necesitás crear uno manual.
 - **Privacidad**: el repositorio privado oculta el código fuente, pero los Releases son públicos por defecto. Si querés restringir la descarga, cambiá a un repo privado con releases privados.
+=======
+# Analisis-de-burbujas
+>>>>>>> 42bf06330c0d905904cbe6da74767014983fa3d4
