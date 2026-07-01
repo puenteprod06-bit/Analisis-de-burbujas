@@ -1,0 +1,29 @@
+name: Build & Release Windows
+
+on:
+  push:
+    tags:
+      - 'v*'   # Se dispara al hacer: git tag v1.0.1 && git push --tags
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Build y publicar en GitHub Releases
+        env:
+          # Token automático de GitHub para subir el release
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run publish
