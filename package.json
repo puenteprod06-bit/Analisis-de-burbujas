@@ -1,7 +1,7 @@
 {
   "name": "minsky-monitor",
   "version": "1.0.0",
-  "description": "Minsky Monitor — Enterprise Bubble Analysis Tool",
+  "description": "Minsky Monitor \u2014 Enterprise Bubble Analysis Tool",
   "main": "main.js",
   "author": {
     "name": "SolaroTrade",
@@ -25,7 +25,7 @@
   "build": {
     "appId": "com.solarotrade.minsky-monitor",
     "productName": "Minsky Monitor",
-    "copyright": "Copyright © 2026 SolaroTrade",
+    "copyright": "Copyright \u00a9 2026 SolaroTrade",
     "directories": {
       "output": "dist",
       "buildResources": "assets"
@@ -40,7 +40,9 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ],
       "icon": "assets/icon.ico",
@@ -53,8 +55,6 @@
       "allowElevation": true,
       "installerIcon": "assets/icon.ico",
       "uninstallerIcon": "assets/icon.ico",
-      "installerHeader": "assets/installer-header.bmp",
-      "installerSidebar": "assets/installer-sidebar.bmp",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "Minsky Monitor",
@@ -69,4 +69,3 @@
     }
   }
 }
-
